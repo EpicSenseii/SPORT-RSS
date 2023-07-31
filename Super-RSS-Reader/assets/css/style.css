@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #494949;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.bordel img {
+    border: solid 1px red;
+    width: 100%;
+}
+
+.blueText {
+    background-color: rgb(82, 82, 255);
+    padding: 2px;
+    border-radius: 7px;
+    color: white;
+}
+
+
+/* HEADER */
+
+.headerTitle {
+    text-align: center;
+}
+
+/* NAVBAR */
+
+.navIndex {
+    background-color: rgb(82, 82, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.navIndex ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style-type: none;
+}
+
+.navIndex a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-weight: bold;
+    transition: .150s;
+}
+
+.navIndex a:hover {
+    color: white;
+}
+
+#homeBtn {
+    margin-right: 50px;
+}
+
+#parametersBtn {
+    margin-left: 50px;
+}
+
+.containerIndex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1220px) {
+    .navIndex ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navIndex ul {
+        flex-direction: column;
+    }
+}
+
+/* CARDS */
+
+main {
+    margin: 0 auto;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    border: rgb(192, 192, 192) solid 1px;
+    width: 500px;
+    padding: 30px;
+    position: relative;
+}
+
+.itemTitle {
+    font-weight: 800;
+}
+
+.itemDescription {
+    color: #666666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemDescription img {
+    width: 100%;
+}
+
+.itemDateRead {
+    line-height: 7px;
+}
+
+.itemDate {
+    color: #666666;
+    font-size: .9rem;
+}
+
+.itemReadMore {
+    text-decoration: none;
+    font-weight: 500;
+    transition: .150s;
+}
+
+.itemReadMore:hover {
+    color: rgb(82, 82, 255)
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .cardContainer {
+        gap: 0;
+    }
+
+    .card {
+        border: black solid 1px;
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+/* PREFERENCES */
+
+.preferencesContainer {
+    margin: 0 auto;
+    width: 70%;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    padding: 30px;
+}
+
+.labelSeparator {
+    padding: 10px;
+}
+
+#destroyBtn {
+    background: rgb(245, 93, 93);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* DESTROY */
+
+.destroySection {
+text-align: center;
+}
